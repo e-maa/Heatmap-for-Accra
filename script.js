@@ -11,7 +11,7 @@ function initMap() {
     });
 
     // Generate 1000 random data points around Accra
-    const heatmapData = generateAccraHeatmapData(1000);
+    const heatmapData = generateAccraHeatmapData(10000);
     
     // Create and configure the heatmap layer
     const heatmap = new google.maps.visualization.HeatmapLayer({
