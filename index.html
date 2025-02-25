@@ -1,37 +1,30 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accra Temperature Heatmap</title>
+    <title>Accra Map with Markers</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Accra Temperature Heatmap</h1>
-            <div class="legend">
-                <h3>Temperature (°C)</h3>
-                <div class="legend-scale">
-                    <div class="gradient-bar"></div>
-                    <div class="scale-labels">
-                        <span>22°C</span>
-                        <span>26°C</span>
-                        <span>30°C</span>
-                        <span>34°C</span>
-                    </div>
-                </div>
+            <h1>Accra, Ghana - Points of Interest</h1>
+            <div class="map-controls">
+                <button id="show-all-btn">Show All</button>
+                <button id="show-landmarks-btn">Landmarks</button>
+                <button id="show-hotels-btn">Hotels</button>
+                <button id="show-markets-btn">Markets</button>
             </div>
         </header>
         <main>
             <div id="map"></div>
         </main>
         <footer>
-            <p>Simulated temperature data for Accra, Ghana | Visualized using Google Maps API</p>
+            <p>Map of Accra, Ghana - Major locations and points of interest</p>
         </footer>
     </div>
     
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=visualization&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap" async defer></script>
     <script src="script.js"></script>
 </body>
 </html>
